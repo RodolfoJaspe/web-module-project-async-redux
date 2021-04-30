@@ -1,7 +1,11 @@
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: rgb(71, 0, 0);
-  text-shadow: 1px 1px 1px wheat;
+  color: rgba(255, 101, 41, 0.8);
+  text-shadow: 1px 1px 1px rgb(71, 0, 0);
+  background: rgba(245, 222, 179, 0.9);
+  width: 100vw;
+  padding: 2vh;
+  border: 1px solid rgb(71, 0, 0);
 }
 
 .App {

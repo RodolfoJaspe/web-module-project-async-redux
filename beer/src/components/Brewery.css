@@ -8,9 +8,24 @@ iframe {
 .brewery {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(71, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info {
-  background: rgba(1, 1, 1, 0.3);
-  border-radius: 1vw;
+  background: rgba(255, 221, 183, 0.5);
+  border-radius: 0 0 1vw 1vw;
+  width: 20vw;
+  border: 1px solid rgb(71, 0, 0);
+  margin-bottom: 10vh;
+}
+
+.breweryName {
+  color: wheat;
+  text-shadow: 2px 2px 2px rgb(71, 0, 0);
+  background: rgba(255, 101, 41, 0.8);
+  border: 1px solid rgb(71, 0, 0);
+  border-radius: 1vw 1vw 0 0;
+  padding: 0 5vw;
 }
