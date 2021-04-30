@@ -19,7 +19,7 @@ export const breweryReducer = (state = initialState, action) => {
             return {...state, 
                 loading: false,
                 error: action.payload
-            }
+            };
         default:
             return state;
     }

@@ -1,20 +1,18 @@
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(71, 0, 0);
+  text-shadow: 1px 1px 1px wheat;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background: url(beer.png);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +22,20 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  background: rgb(255, 101, 41);
+  font-size: 1.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: 1px solid white;
+  border-left: none;
+  border-radius: 0vw 0.5vw 0.5vw 0vw;
+  margin-bottom: 10vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  background: rgba(255, 165, 92, 0.4);
+  font-size: 1.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: 1px solid white;
+  border-right: none;
+  border-radius: 0.5vw 0vw 0vw 0.5vw;
 }

@@ -1,18 +1,19 @@
-import React,{ useEffect } from "react";
-import { fetchBreweries } from "../Actions";
+import React from "react";
 import { connect } from "react-redux";
 import Brewery from "./Brewery"; 
 
 function BreweryList (props) {
-    useEffect (()=>{
-        props.fetchBreweries()
-    },[])
+    const breweriesOnline = props.breweries.filter(brewery => {  //some of the breweries don't have websites, filter those  out
+        if (brewery.website_url) {
+            return brewery}
+    }) 
+    
     return (
         <div>
-            {props.breweries.map(brewery => (
-                <Brewery brewery={brewery} />
-            ))}
-        </div>
+            {breweriesOnline.map(brewery => {
+                return <Brewery brewery={brewery} key={brewery.id}/>
+            })}
+        </div>  
     )
 }
 
@@ -21,4 +22,4 @@ const mapStateToProps = state => {
         breweries: state.breweries
     }
 }
-export default connect(mapStateToProps, {fetchBreweries})(BreweryList)
+export default connect(mapStateToProps, {})(BreweryList)

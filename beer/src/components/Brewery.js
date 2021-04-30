@@ -1,14 +1,20 @@
 import React from "react";
+import "./Brewery.css";
 
 function Brewery (props) {
-    const {name, website_url, street,city,state} = props.brewery
+    const {name, website_url, street, city, state, phone, zip} = props.brewery
     return (
-        <div>
-            <h3>{name}</h3>
-            <iframe src={website_url}></iframe>
-            <p>{street}</p>
-            <p>{city}</p>
-            <p>{state}</p>
+        <div className="brewery">
+            <h2>{name}</h2>
+            <iframe src={website_url} alt="website"></iframe>
+            <div className="info">
+                <h5>{phone}</h5>
+                <h4>
+                    {street}<br/>
+                    {city},{state} {zip}
+                </h4>  
+            </div>
+          
         </div>
     )
 }
