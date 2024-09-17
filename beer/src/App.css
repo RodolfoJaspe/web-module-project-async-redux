@@ -1,0 +1,45 @@
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgba(255, 101, 41, 0.8);
+  text-shadow: 1px 1px 1px rgb(71, 0, 0);
+  background: rgba(245, 222, 179, 0.9);
+  width: 100vw;
+  padding: 2vh;
+  border: 1px solid rgb(71, 0, 0);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background: url(beer.png);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+button {
+  background: rgb(255, 101, 41);
+  font-size: 1.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: 1px solid white;
+  border-left: none;
+  border-radius: 0vw 0.5vw 0.5vw 0vw;
+  margin-bottom: 10vh;
+}
+input {
+  background: rgba(255, 165, 92, 0.4);
+  font-size: 1.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: 1px solid white;
+  border-right: none;
+  border-radius: 0.5vw 0vw 0vw 0.5vw;
+}
